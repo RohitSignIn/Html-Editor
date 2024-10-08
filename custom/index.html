@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.9.1/dist/themes/classic.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <style>
+      .pickr {
+        position: relative;
+      }
+      .pcr-app[data-theme="classic"] {
+        max-width: 15.5rem !important;
+      }
+      .pcr-button {
+        display: none; /* Hides the button but keeps its space */
+      }
+      .pcr-app {
+        position: relative !important; /* Allows precise positioning within the parent div */
+        top: 0 !important;
+        left: 0 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="temp-edit-con">
+      <div id="temp-wrap-con">
+      <div id="temp-wrap">
+        <div
+          class=""
+          in-section="false"
+          in="false"
+        >
+          <h1
+            id="control-2717488"
+            data-diff-node="del"
+            data-operation-index="3"
+          >
+            Fill the form
+          </h1>
+        </div>
+        <div
+          class="formbuilder-text form-group field-AccountId"
+          in-section="false"
+          in="false"
+        >
+          <label for="AccountId" class="formbuilder-text-label"
+            >Account ID</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="AccountId"
+            id="AccountId"
+          />
+        </div>
+        <div
+          class="formbuilder-text form-group field-Pricebook2Id"
+          in-section="false"
+          in="false"
+        >
+          <label for="Pricebook2Id" class="formbuilder-text-label"
+            >Price Book ID</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="Pricebook2Id"
+            id="Pricebook2Id"
+          />
+        </div>
+        <div
+          class="formbuilder-select form-group field-OwnerExpirationNotice"
+          in-section="false"
+          in="false"
+        >
+          <label for="OwnerExpirationNotice" class="formbuilder-select-label"
+            >Owner Expiration Notice</label
+          >
+          <select
+            class="form-control"
+            name="OwnerExpirationNotice"
+            id="OwnerExpirationNotice"
+          >
+            <option value="15" selected="selected" id="OwnerExpirationNotice-0">
+              15 Days
+            </option>
+            <option value="30" id="OwnerExpirationNotice-1">30 Days</option>
+            <option value="45" id="OwnerExpirationNotice-2">45 Days</option>
+            <option value="60" id="OwnerExpirationNotice-3">60 Days</option>
+            <option value="90" id="OwnerExpirationNotice-4">90 Days</option>
+            <option value="120" id="OwnerExpirationNotice-5">120 Days</option>
+          </select>
+        </div>
+        <div
+          class="formbuilder-textarea form-group field-BillingStreet"
+          in-section="false"
+          in="false"
+        >
+          <label for="BillingStreet" class="formbuilder-textarea-label"
+            >Billing Street</label
+          >
+          <textarea
+            class="form-control"
+            name="BillingStreet"
+            id="BillingStreet"
+          ></textarea>
+        </div>
+        <div
+          class="formbuilder-text form-group field-BillingCity"
+          in-section="false"
+          in="false"
+        >
+          <label for="BillingCity" class="formbuilder-text-label"
+            >Billing City</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="BillingCity"
+            id="BillingCity"
+          />
+        </div>
+        <div
+          class="formbuilder-text form-group field-BillingState"
+          in-section="false"
+          in="false"
+        >
+          <label for="BillingState" class="formbuilder-text-label"
+            >Billing State/Province</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="BillingState"
+            id="BillingState"
+          />
+        </div>
+        <div
+          class="formbuilder-select form-group field-BillingGeocodeAccuracy"
+          in-section="false"
+          in="false"
+        >
+          <label for="BillingGeocodeAccuracy" class="formbuilder-select-label"
+            >Billing Geocode Accuracy</label
+          >
+          <select
+            class="form-control"
+            name="BillingGeocodeAccuracy"
+            id="BillingGeocodeAccuracy"
+          >
+            <option
+              value="Address"
+              selected="selected"
+              id="BillingGeocodeAccuracy-0"
+            >
+              Address
+            </option>
+            <option value="NearAddress" id="BillingGeocodeAccuracy-1">
+              Near Address
+            </option>
+            <option value="Block" id="BillingGeocodeAccuracy-2">Block</option>
+            <option value="Street" id="BillingGeocodeAccuracy-3">Street</option>
+            <option value="ExtendedZip" id="BillingGeocodeAccuracy-4">
+              Extended Zip
+            </option>
+            <option value="Zip" id="BillingGeocodeAccuracy-5">Zip</option>
+            <option value="Neighborhood" id="BillingGeocodeAccuracy-6">
+              Neighborhood
+            </option>
+            <option value="City" id="BillingGeocodeAccuracy-7">City</option>
+            <option value="County" id="BillingGeocodeAccuracy-8">County</option>
+            <option value="State" id="BillingGeocodeAccuracy-9">State</option>
+            <option value="Unknown" id="BillingGeocodeAccuracy-10">
+              Unknown
+            </option>
+          </select>
+        </div>
+        <div
+          class="formbuilder-date form-group field-ActivatedDate"
+          in-section="false"
+          in="false"
+        >
+          <label for="ActivatedDate" class="formbuilder-date-label"
+            >Activated Date</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            name="ActivatedDate"
+            id="ActivatedDate"
+          />
+        </div>
+        <div
+          class="formbuilder-textarea form-group field-Description"
+          in-section="false"
+          in="false"
+        >
+          <label for="Description" class="formbuilder-textarea-label"
+            >Description</label
+          >
+          <textarea
+            class="form-control"
+            name="Description"
+            id="Description"
+          ></textarea>
+        </div>
+        <div
+          class="formbuilder-section form-group field-Name section-render"
+          type="section"
+          repeat="true"
+          contains="Pricebook2"
+        >
+          <div
+            type="section"
+            contains="Pricebook2"
+            repeat="repeat"
+            class=""
+            name="Name"
+            id="Name"
+          >
+            Price Book Name
+            <hr style="border: 2px dashed #9797ff" />
+          </div>
+          <div
+            class="formbuilder-text form-group field-Name"
+            in-section="true"
+            in="true"
+          >
+            <label for="Name" class="formbuilder-text-label"
+              >Price Book Name</label
+            >
+            <input
+              type="text"
+              in-section="in-section"
+              class="form-control"
+              name="Name"
+              id="Name"
+            />
+          </div>
+          <div
+            class="formbuilder-radio-group form-group field-IsActive"
+            in-section="true"
+            in="true"
+          >
+            <label for="IsActive" class="formbuilder-radio-group-label"
+              >Active</label
+            >
+            <div class="radio-group">
+              <div class="formbuilder-radio">
+                <input
+                  in-section="in-section"
+                  name="IsActive"
+                  id="IsActive-0"
+                  value="option-1"
+                  type="radio"
+                />
+                <label for="IsActive-0">Option 1</label>
+              </div>
+              <div class="formbuilder-radio">
+                <input
+                  in-section="in-section"
+                  name="IsActive"
+                  id="IsActive-1"
+                  value="option-2"
+                  type="radio"
+                />
+                <label for="IsActive-1">Option 2</label>
+              </div>
+              <div class="formbuilder-radio">
+                <input
+                  in-section="in-section"
+                  name="IsActive"
+                  id="IsActive-2"
+                  value="option-3"
+                  type="radio"
+                />
+                <label for="IsActive-2">Option 3</label>
+              </div>
+            </div>
+          </div>
+          <div
+            class="formbuilder-text form-group field-Description"
+            in-section="true"
+            in="true"
+          >
+            <label for="Description" class="formbuilder-text-label"
+              >Description</label
+            >
+            <input
+              type="text"
+              in-section="in-section"
+              class="form-control"
+              name="Description"
+              id="Description"
+            />
+          </div>
+        </div>
+        <div
+          class="formbuilder-section form-group field-section-1724409941961-0 section-render"
+          type="section"
+        >
+          <div
+            type="section"
+            name="section-1724409941961-0"
+            id="section-1724409941961-0"
+          >
+            New Section Title
+            <hr style="border: 2px dashed #9797ff" />
+          </div>
+          <div
+            class="formbuilder-text form-group field-AccountId"
+            in-section="true"
+            in="true"
+          >
+            <label for="AccountId" class="formbuilder-text-label"
+              >Account ID</label
+            >
+            <input
+              type="text"
+              in-section="in-section"
+              class="form-control"
+              name="AccountId"
+              id="AccountId"
+            />
+          </div>
+          <div
+            class="formbuilder-date form-group field-StartDate"
+            in-section="true"
+            in="true"
+          >
+            <label for="StartDate" class="formbuilder-date-label"
+              >Contract Start Date</label
+            >
+            <input
+              type="date"
+              in-section="in-section"
+              class="form-control"
+              name="StartDate"
+              id="StartDate"
+            />
+          </div>
+          <div
+            class="formbuilder-text form-group field-BillingState"
+            in-section="true"
+            in="true"
+          >
+            <label for="BillingState" class="formbuilder-text-label"
+              >Billing State/Province</label
+            >
+            <input
+              type="text"
+              in-section="in-section"
+              class="form-control"
+              name="BillingState"
+              id="BillingState"
+            />
+          </div>
+          <div
+            class="formbuilder-text form-group field-BillingCountry"
+            in-section="true"
+            in="true"
+          >
+            <label for="BillingCountry" class="formbuilder-text-label"
+              >Billing Country</label
+            >
+            <input
+              type="text"
+              in-section="in-section"
+              class="form-control"
+              name="BillingCountry"
+              id="BillingCountry"
+            />
+          </div>
+          <div
+            class="formbuilder-date form-group field-CompanySignedDate"
+            in-section="true"
+            in="true"
+          >
+            <label for="CompanySignedDate" class="formbuilder-date-label"
+              >Company Signed Date</label
+            >
+            <input
+              type="date"
+              in-section="in-section"
+              class="form-control"
+              name="CompanySignedDate"
+              id="CompanySignedDate"
+            />
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="temp-editor">
+        <div id="editor-nav">
+          <div>
+            <div class="nav-catg-pos-1">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  fill="#000000"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="dashboard-alt"
+                  class="icon glyph"
+                >
+                  <path d="M14,10V22H4a2,2,0,0,1-2-2V10Z"></path>
+                  <path d="M22,10V20a2,2,0,0,1-2,2H16V10Z"></path>
+                  <path d="M22,4V8H2V4A2,2,0,0,1,4,2H20A2,2,0,0,1,22,4Z"></path>
+                </svg>
+              </div>
+              <p>Templates</p>
+            </div>
+            <div class="nav-catg-pos-1">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 7C4 5.11438 4 4.17157 4.58579 3.58579C5.17157 3 6.11438 3 8 3H16C17.8856 3 18.8284 3 19.4142 3.58579C20 4.17157 20 5.11438 20 7V15C20 17.8284 20 19.2426 19.1213 20.1213C18.2426 21 16.8284 21 14 21H10C7.17157 21 5.75736 21 4.87868 20.1213C4 19.2426 4 17.8284 4 15V7Z"
+                    stroke="#33363F"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M15 18L15 21M9 18L9 21"
+                    stroke="#33363F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9 8L15 8"
+                    stroke="#33363F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9 12L15 12"
+                    stroke="#33363F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <p>Form</p>
+            </div>
+            <div class="nav-catg-pos-1">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  fill="none"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m4 3v4h11v-4zm0 10h7v-4h-7zm1-3h5v2h-5zm-4 5h1.4v-14h-1.4z"
+                  />
+                </svg>
+              </div>
+              <p>Fields</p>
+            </div>
+            <div class="nav-catg-pos-1">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2 1.5C2 1.77614 1.77614 2 1.5 2C1.22386 2 1 1.77614 1 1.5C1 1.22386 1.22386 1 1.5 1C1.77614 1 2 1.22386 2 1.5ZM2 5L2 10H13V5H2ZM2 4C1.44772 4 1 4.44772 1 5V10C1 10.5523 1.44772 11 2 11H13C13.5523 11 14 10.5523 14 10V5C14 4.44772 13.5523 4 13 4H2ZM1.5 14C1.77614 14 2 13.7761 2 13.5C2 13.2239 1.77614 13 1.5 13C1.22386 13 1 13.2239 1 13.5C1 13.7761 1.22386 14 1.5 14ZM4 1.5C4 1.77614 3.77614 2 3.5 2C3.22386 2 3 1.77614 3 1.5C3 1.22386 3.22386 1 3.5 1C3.77614 1 4 1.22386 4 1.5ZM3.5 14C3.77614 14 4 13.7761 4 13.5C4 13.2239 3.77614 13 3.5 13C3.22386 13 3 13.2239 3 13.5C3 13.7761 3.22386 14 3.5 14ZM6 1.5C6 1.77614 5.77614 2 5.5 2C5.22386 2 5 1.77614 5 1.5C5 1.22386 5.22386 1 5.5 1C5.77614 1 6 1.22386 6 1.5ZM5.5 14C5.77614 14 6 13.7761 6 13.5C6 13.2239 5.77614 13 5.5 13C5.22386 13 5 13.2239 5 13.5C5 13.7761 5.22386 14 5.5 14ZM8 1.5C8 1.77614 7.77614 2 7.5 2C7.22386 2 7 1.77614 7 1.5C7 1.22386 7.22386 1 7.5 1C7.77614 1 8 1.22386 8 1.5ZM7.5 14C7.77614 14 8 13.7761 8 13.5C8 13.2239 7.77614 13 7.5 13C7.22386 13 7 13.2239 7 13.5C7 13.7761 7.22386 14 7.5 14ZM10 1.5C10 1.77614 9.77614 2 9.5 2C9.22386 2 9 1.77614 9 1.5C9 1.22386 9.22386 1 9.5 1C9.77614 1 10 1.22386 10 1.5ZM9.5 14C9.77614 14 10 13.7761 10 13.5C10 13.2239 9.77614 13 9.5 13C9.22386 13 9 13.2239 9 13.5C9 13.7761 9.22386 14 9.5 14ZM12 1.5C12 1.77614 11.7761 2 11.5 2C11.2239 2 11 1.77614 11 1.5C11 1.22386 11.2239 1 11.5 1C11.7761 1 12 1.22386 12 1.5ZM11.5 14C11.7761 14 12 13.7761 12 13.5C12 13.2239 11.7761 13 11.5 13C11.2239 13 11 13.2239 11 13.5C11 13.7761 11.2239 14 11.5 14ZM14 1.5C14 1.77614 13.7761 2 13.5 2C13.2239 2 13 1.77614 13 1.5C13 1.22386 13.2239 1 13.5 1C13.7761 1 14 1.22386 14 1.5ZM13.5 14C13.7761 14 14 13.7761 14 13.5C14 13.2239 13.7761 13 13.5 13C13.2239 13 13 13.2239 13 13.5C13 13.7761 13.2239 14 13.5 14Z"
+                  />
+                </svg>
+              </div>
+              <p>Section</p>
+            </div>
+            <div class="nav-catg-pos-1">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 6H2a1.001 1.001 0 0 0-1 1v3a1.001 1.001 0 0 0 1 1h20a1.001 1.001 0 0 0 1-1V7a1.001 1.001 0 0 0-1-1zm0 4H2V7h20v3h.001M22 17H2a1.001 1.001 0 0 0-1 1v3a1.001 1.001 0 0 0 1 1h20a1.001 1.001 0 0 0 1-1v-3a1.001 1.001 0 0 0-1-1zm0 4H2v-3h20v3h.001M10 14v1H2v-1zM2 3h8v1H2z"
+                  />
+                  <path fill="none" d="M0 0h24v24H0z" />
+                </svg>
+              </div>
+              <p>Section Fields</p>
+            </div>
+            <div class="nav-catg-pos-1">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8 3C8 2.44772 8.44772 2 9 2L15 2C15.5523 2 16 2.44772 16 3C16 3.55229 15.5523 4 15 4L13 4L13 20H15C15.5523 20 16 20.4477 16 21C16 21.5523 15.5523 22 15 22H9C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20H11L11 4H9C8.44772 4 8 3.55228 8 3ZM7.788 6L8 6C8.55229 6 9 6.44772 9 7C9 7.55228 8.55229 8 8 8H7.83C6.95898 8 6.36686 8.0008 5.90945 8.03879C5.46401 8.07578 5.23663 8.1428 5.07805 8.22517C4.71277 8.41492 4.41493 8.71276 4.22517 9.07805C4.1428 9.23663 4.07578 9.46401 4.03879 9.90945C4.0008 10.3669 4 10.959 4 11.83V12.17C4 13.041 4.0008 13.6331 4.03879 14.0905C4.07578 14.536 4.1428 14.7634 4.22517 14.9219C4.41493 15.2872 4.71277 15.5851 5.07805 15.7748C5.23663 15.8572 5.46402 15.9242 5.90945 15.9612C6.36686 15.9992 6.95898 16 7.83 16H8C8.55229 16 9 16.4477 9 17C9 17.5523 8.55229 18 8 18H7.78798C6.96946 18 6.29393 18 5.74393 17.9543C5.17258 17.9069 4.64774 17.805 4.1561 17.5497C3.42553 17.1702 2.82985 16.5745 2.45035 15.8439C2.19496 15.3523 2.0931 14.8274 2.04565 14.2561C1.99998 13.7061 1.99999 13.0305 2 12.212V11.788C1.99999 10.9695 1.99998 10.2939 2.04565 9.74393C2.0931 9.17258 2.19496 8.64774 2.45035 8.1561C2.82985 7.42553 3.42553 6.82985 4.1561 6.45035C4.64774 6.19496 5.17258 6.0931 5.74393 6.04565C6.29393 5.99998 6.96947 5.99999 7.788 6ZM18.0905 8.03879C17.6331 8.0008 17.041 8 16.17 8H16C15.4477 8 15 7.55228 15 7C15 6.44772 15.4477 6 16 6L16.212 6C17.0305 5.99999 17.7061 5.99998 18.2561 6.04565C18.8274 6.0931 19.3523 6.19496 19.8439 6.45035C20.5745 6.82985 21.1702 7.42553 21.5497 8.1561C21.805 8.64774 21.9069 9.17258 21.9543 9.74393C22 10.2939 22 10.9695 22 11.788V12.212C22 13.0305 22 13.7061 21.9543 14.2561C21.9069 14.8274 21.805 15.3523 21.5497 15.8439C21.1702 16.5745 20.5745 17.1702 19.8439 17.5497C19.3523 17.805 18.8274 17.9069 18.2561 17.9543C17.7061 18 17.0305 18 16.212 18H16C15.4477 18 15 17.5523 15 17C15 16.4477 15.4477 16 16 16H16.17C17.041 16 17.6331 15.9992 18.0905 15.9612C18.536 15.9242 18.7634 15.8572 18.9219 15.7748C19.2872 15.5851 19.5851 15.2872 19.7748 14.9219C19.8572 14.7634 19.9242 14.536 19.9612 14.0905C19.9992 13.6331 20 13.041 20 12.17V11.83C20 10.959 19.9992 10.3669 19.9612 9.90945C19.9242 9.46401 19.8572 9.23663 19.7748 9.07805C19.5851 8.71277 19.2872 8.41492 18.9219 8.22517C18.7634 8.1428 18.536 8.07578 18.0905 8.03879Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <p>Input</p>
+            </div>
+            <div class="nav-catg-pos-1">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?>
+
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  fill="none"
+                  height="44"
+                  width="44"
+                  version="1.1"
+                  id="Icons"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M29,11H15V9h1c0.6,0,1-0.4,1-1s-0.4-1-1-1h-4c-0.6,0-1,0.4-1,1s0.4,1,1,1h1v2H3c-0.6,0-1,0.4-1,1v10c0,0.6,0.4,1,1,1h10v2
+	h-1c-0.6,0-1,0.4-1,1s0.4,1,1,1h4c0.6,0,1-0.4,1-1s-0.4-1-1-1h-1v-2h14c0.6,0,1-0.4,1-1V12C30,11.4,29.6,11,29,11z M10,16H9v3
+	c0,0.6-0.4,1-1,1s-1-0.4-1-1v-3H6c-0.6,0-1-0.4-1-1s0.4-1,1-1h4c0.6,0,1,0.4,1,1S10.6,16,10,16z M15,21c0,0.5-0.5,1-1,1s-1-0.5-1-1
+	v-8c0-0.5,0.5-1,1-1s1,0.5,1,1V21z"
+                  />
+                </svg>
+              </div>
+              <p>Section Input</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="style-nav" style="display: none">
+          <div id="nav-catg-pos-2-back">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="28"
+              height="18"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M222.927 580.115l301.354 328.512c24.354 28.708 20.825 71.724-7.883 96.078s-71.724 20.825-96.078-7.883L19.576 559.963a67.846 67.846 0 01-13.784-20.022 68.03 68.03 0 01-5.977-29.488l.001-.063a68.343 68.343 0 017.265-29.134 68.28 68.28 0 011.384-2.6 67.59 67.59 0 0110.102-13.687L429.966 21.113c25.592-27.611 68.721-29.247 96.331-3.656s29.247 68.721 3.656 96.331L224.088 443.784h730.46c37.647 0 68.166 30.519 68.166 68.166s-30.519 68.166-68.166 68.166H222.927z"
+              />
+            </svg>
+          </div>
+          <div>
+            <div class="nav-catg-pos-2">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 6h7v10H9V6zm2 2v6h3V8h-3zM0 14h7v2H0v-2zm0-8h7v2H0V6zm0 4h7v2H0v-2zM0 0h16v4H0V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p>Layout</p>
+            </div>
+            <div class="nav-catg-pos-2">
+              <div>
+                <svg
+                  fill="none"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns:x="&ns_extend;"
+                  xmlns:i="&ns_ai;"
+                  xmlns:graph="&ns_graphs;"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  enable-background="new 0 0 24 24"
+                  xml:space="preserve"
+                >
+                  <metadata>
+                    <sfw xmlns="&ns_sfw;">
+                      <slices></slices>
+                      <sliceSourceBounds
+                        width="505"
+                        height="984"
+                        bottomLeftOrigin="true"
+                        x="0"
+                        y="-120"
+                      ></sliceSourceBounds>
+                    </sfw>
+                  </metadata>
+                  <g>
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="M16,6H8C7.4,6,7,5.6,7,5s0.4-1,1-1h8c0.6,0,1,0.4,1,1S16.6,6,16,6z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M16,20H8c-0.6,0-1-0.4-1-1s0.4-1,1-1h8c0.6,0,1,0.4,1,1S16.6,20,16,20z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M19,17c-0.6,0-1-0.4-1-1V8c0-0.6,0.4-1,1-1s1,0.4,1,1v8C20,16.6,19.6,17,19,17z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M5,17c-0.6,0-1-0.4-1-1V8c0-0.6,0.4-1,1-1s1,0.4,1,1v8C6,16.6,5.6,17,5,17z"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M23,24H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h22c0.6,0,1,0.4,1,1v22C24,23.6,23.6,24,23,24z M2,22h20V2H2V22z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p>Padding</p>
+            </div>
+            <div class="nav-catg-pos-2">
+              <div>
+                <svg
+                  fill="none"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns:x="&ns_extend;"
+                  xmlns:i="&ns_ai;"
+                  xmlns:graph="&ns_graphs;"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  enable-background="new 0 0 24 24"
+                  xml:space="preserve"
+                >
+                  <metadata>
+                    <sfw xmlns="&ns_sfw;">
+                      <slices></slices>
+                      <sliceSourceBounds
+                        width="505"
+                        height="984"
+                        bottomLeftOrigin="true"
+                        x="0"
+                        y="-120"
+                      ></sliceSourceBounds>
+                    </sfw>
+                  </metadata>
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M19,2H5C4.4,2,4,1.6,4,1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S19.6,2,19,2z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M19,24H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S19.6,24,19,24z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M23,20c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1s1,0.4,1,1v14C24,19.6,23.6,20,23,20z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M1,20c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1s1,0.4,1,1v14C2,19.6,1.6,20,1,20z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M19,20H5c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1h14c0.6,0,1,0.4,1,1v14C20,19.6,19.6,20,19,20z M6,18h12V6H6V18z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p>Margin</p>
+            </div>
+            <div class="nav-catg-pos-2">
+              <div>
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  fill="none"
+                  height="44"
+                  width="44"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M162.909,465.455h-23.273c-12.87,0-23.273,10.426-23.273,23.273S126.767,512,139.636,512h23.273
+				c12.87,0,23.273-10.426,23.273-23.273S175.779,465.455,162.909,465.455z"
+                        />
+                        <path
+                          d="M279.273,465.455H256c-12.87,0-23.273,10.426-23.273,23.273S243.13,512,256,512h23.273
+				c12.87,0,23.273-10.426,23.273-23.273S292.143,465.455,279.273,465.455z"
+                        />
+                        <path
+                          d="M69.818,139.636H46.545c-12.87,0-23.273,10.426-23.273,23.273c0,12.846,10.403,23.273,23.273,23.273h23.273
+				c12.87,0,23.273-10.426,23.273-23.273C93.091,150.063,82.688,139.636,69.818,139.636z"
+                        />
+                        <path
+                          d="M23.273,395.636c12.87,0,23.273-10.426,23.273-23.273v-23.273c0-12.847-10.403-23.273-23.273-23.273S0,336.244,0,349.091
+				v23.273C0,385.21,10.403,395.636,23.273,395.636z"
+                        />
+                        <path
+                          d="M23.273,279.273c12.87,0,23.273-10.426,23.273-23.273v-23.273c0-12.847-10.403-23.273-23.273-23.273S0,219.881,0,232.727
+				V256C0,268.847,10.403,279.273,23.273,279.273z"
+                        />
+                        <path
+                          d="M349.091,418.909c-12.87,0-23.273,10.426-23.273,23.273v23.273c0,12.847,10.403,23.273,23.273,23.273
+				c12.87,0,23.273-10.426,23.273-23.273v-23.273C372.364,429.335,361.961,418.909,349.091,418.909z"
+                        />
+                        <path
+                          d="M46.545,465.455c0-12.846-10.403-23.273-23.273-23.273S0,452.608,0,465.455v23.273C0,501.574,10.403,512,23.273,512
+				h23.273c12.87,0,23.273-10.426,23.273-23.273S59.415,465.455,46.545,465.455z"
+                        />
+                        <path
+                          d="M488.355,0H209.827c-13.056,0-23.645,10.589-23.645,23.645v115.991h-23.273c-12.87,0-23.273,10.426-23.273,23.273
+				c0,12.846,10.403,23.273,23.273,23.273h23.273v115.991c0,13.056,10.589,23.645,23.645,23.645h115.991v23.273
+				c0,12.846,10.403,23.273,23.273,23.273c12.87,0,23.273-10.426,23.273-23.273v-23.273h115.991
+				c13.056,0,23.645-10.589,23.645-23.645V23.645C512,10.589,501.411,0,488.355,0z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p>Background</p>
+            </div>
+            <div class="nav-catg-pos-2">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.2261 2L0.11499 14H2.18111L2.95889 11H6.04092L6.81869 14H8.88482L5.77371 2H3.2261ZM5.5224 9L4.4999 5.05609L3.47741 9H5.5224Z"
+                    fill="#ffffff"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14 7.33682C13.5454 7.12085 13.0368 7 12.5 7C10.567 7 9.00004 8.567 9.00004 10.5C9.00004 12.433 10.567 14 12.5 14C13.0368 14 13.5454 13.8792 14 13.6632V14H16V7H14V7.33682ZM11 10.5C11 9.67157 11.6716 9 12.5 9C13.3285 9 14 9.67157 14 10.5C14 11.3284 13.3285 12 12.5 12C11.6716 12 11 11.3284 11 10.5Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </div>
+              <p>Font</p>
+            </div>
+            <div class="nav-catg-pos-2">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  fill="none"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>border-outer</title>
+                  <path
+                    d="M29.75 3c-0-0.21-0.087-0.4-0.227-0.535l-0-0-0.003-0.004-0.009-0.003c-0.133-0.127-0.312-0.205-0.511-0.207h-26c-0.188 0.002-0.359 0.074-0.488 0.191l0.001-0.001c-0.015 0.011-0.039 0.006-0.052 0.019-0.042 0.054-0.079 0.116-0.108 0.182l-0.002 0.005c-0.060 0.101-0.097 0.223-0.1 0.352v12.954c-0.001 0.016-0.011 0.031-0.011 0.046s0.010 0.030 0.011 0.045v6.91c-0.001 0.016-0.011 0.029-0.011 0.045 0 0.018 0.009 0.033 0.011 0.051v5.949c0.005 0.061 0.017 0.118 0.035 0.172l-0.001-0.005c0 0 0 0.001 0 0.001 0 0.040 0.006 0.078 0.017 0.114l-0.001-0.003c0.039 0.094 0.093 0.173 0.16 0.24l0 0 0.005 0.003c0.065 0.067 0.143 0.122 0.23 0.16l0.005 0.002 0.021 0.014c0.031 0.010 0.067 0.015 0.105 0.015h0c0.051 0.018 0.111 0.030 0.173 0.035l0.002 0h26c0.065-0.005 0.125-0.018 0.182-0.037l-0.005 0.002c0.037-0 0.072-0.006 0.105-0.016l-0.003 0.001 0.010-0.008c0.182-0.078 0.324-0.22 0.4-0.397l0.002-0.005 0.008-0.010c0.009-0.031 0.015-0.066 0.015-0.102v-0c0.018-0.052 0.031-0.112 0.036-0.175l0-0.002zM28.25 28.25h-24.5v-5.205c0.001-0.016 0.010-0.029 0.010-0.045s-0.009-0.032-0.010-0.049v-6.903c0.001-0.017 0.010-0.031 0.010-0.048s-0.009-0.033-0.010-0.050v-12.2h5.7c0.017 0.001 0.033 0.010 0.050 0.010s0.033-0.009 0.050-0.010h6.401c0.017 0.001 0.033 0.010 0.050 0.010s0.032-0.009 0.048-0.010h6.402c0.017 0.001 0.033 0.010 0.050 0.010s0.031-0.009 0.048-0.010h5.702zM8.96 15.46c-0.124 0.144-0.2 0.333-0.2 0.54s0.076 0.396 0.201 0.541l-0.001-0.001c0.144 0.124 0.333 0.199 0.54 0.199s0.396-0.075 0.541-0.2l-0.001 0.001c0.133-0.141 0.215-0.331 0.22-0.539v-0.001c0-0 0-0 0-0 0-0.21-0.084-0.401-0.22-0.54l0 0c-0.145-0.122-0.334-0.196-0.54-0.196s-0.395 0.074-0.541 0.197l0.001-0.001zM15.46 9.54c0.139 0.136 0.33 0.22 0.54 0.22s0.401-0.084 0.54-0.22l-0 0c0.062-0.075 0.115-0.161 0.156-0.254l0.003-0.007c0.023-0.083 0.038-0.179 0.040-0.278l0-0.001c-0.002-0.206-0.077-0.395-0.2-0.541l0.001 0.001c-0.145-0.122-0.334-0.196-0.54-0.196s-0.395 0.074-0.541 0.197l0.001-0.001c-0.124 0.134-0.201 0.314-0.201 0.511 0 0.010 0 0.020 0.001 0.030l-0-0.001c-0.001 0.016-0.002 0.034-0.002 0.052 0 0.082 0.015 0.16 0.044 0.231l-0.002-0.004c0.044 0.1 0.098 0.185 0.162 0.263l-0.002-0.002zM16 16.739c0.411-0.014 0.74-0.351 0.74-0.764 0-0.199-0.076-0.38-0.2-0.516l0.001 0.001c-0.145-0.122-0.334-0.196-0.54-0.196s-0.395 0.074-0.541 0.197l0.001-0.001c-0.124 0.144-0.2 0.333-0.2 0.54s0.076 0.396 0.201 0.541l-0.001-0.001c0.145 0.122 0.334 0.197 0.54 0.199h0zM15.46 22.459c-0.123 0.145-0.198 0.334-0.2 0.541v0c-0 0.005-0 0.010-0 0.015 0 0.202 0.076 0.386 0.201 0.525l-0.001-0.001c0.075 0.063 0.161 0.116 0.253 0.157l0.007 0.003c0.079 0.038 0.171 0.061 0.269 0.061 0.004 0 0.008-0 0.012-0h-0.001c0.204-0 0.388-0.085 0.519-0.221l0-0c0.146-0.135 0.238-0.326 0.24-0.539v-0c0-0 0-0 0-0 0-0.21-0.084-0.401-0.22-0.541l0 0c-0.142-0.13-0.332-0.209-0.54-0.209s-0.398 0.080-0.541 0.21l0.001-0.001zM21.959 15.479c-0.135 0.133-0.218 0.317-0.219 0.52v0c-0 0.003-0 0.007-0 0.011 0 0.414 0.335 0.749 0.749 0.749 0.004 0 0.008-0 0.012-0h-0.001c0.002 0 0.005 0 0.008 0 0.098 0 0.192-0.022 0.275-0.062l-0.004 0.002c0.093-0.039 0.173-0.093 0.24-0.159l-0 0c0.139-0.14 0.228-0.328 0.24-0.538l0-0.002c-0.008-0.206-0.099-0.39-0.24-0.52l-0-0c-0.061-0.080-0.143-0.142-0.236-0.178l-0.004-0.001c-0.079-0.029-0.171-0.046-0.267-0.046-0.216 0-0.411 0.086-0.554 0.226l0-0z"
+                  ></path>
+                </svg>
+              </div>
+              <p>Border</p>
+            </div>
+            <div class="nav-catg-pos-2">
+              <div>
+                <?xml version="1.0" encoding="utf-8"?>
+
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    fill="#FFF"
+                    d="M14 2v-2h-14v14h2v2h14v-14h-2zM13 13h-12v-12h12v12z"
+                  ></path>
+                </svg>
+              </div>
+              <p>Box Shadow</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="main-styles">
+          <div id="nav-catg-pos-3-back" style="display: none">
+            <!--?xml version="1.0" encoding="utf-8"?--><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="28"
+              height="18"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M222.927 580.115l301.354 328.512c24.354 28.708 20.825 71.724-7.883 96.078s-71.724 20.825-96.078-7.883L19.576 559.963a67.846 67.846 0 01-13.784-20.022 68.03 68.03 0 01-5.977-29.488l.001-.063a68.343 68.343 0 017.265-29.134 68.28 68.28 0 011.384-2.6 67.59 67.59 0 0110.102-13.687L429.966 21.113c25.592-27.611 68.721-29.247 96.331-3.656s29.247 68.721 3.656 96.331L224.088 443.784h730.46c37.647 0 68.166 30.519 68.166 68.166s-30.519 68.166-68.166 68.166H222.927z"
+              ></path>
+            </svg>
+          </div>
+          <div id="avlbl-temp" style="display: none">
+            <div
+              id="temp-def"
+              style="
+                background-color: #603f26;
+                position: absolute;
+                top: 42px;
+                left: 2px;
+              "
+              onclick="tempDef()"
+            >
+              <div style="background-color: #ffdbb5">
+                <span style="color: #6c4e31">Active</span>
+              </div>
+            </div>
+
+            <div
+              id="temp-a"
+              style="background-color: #9797ff"
+              onclick="tempA()"
+            >
+              <div style="background-color: blanchedalmond">
+                <span style="color: tomato">Title</span>
+              </div>
+            </div>
+
+            <div
+              id="temp-b"
+              style="background-color: #087e3d"
+              onclick="tempB()"
+            >
+              <div style="background-color: #41311a">
+                <span style="color: #c1c5ae">Title</span>
+              </div>
+            </div>
+
+            <div
+              id="temp-b"
+              style="background-color: #2d2d2d"
+              onclick="tempC()"
+            >
+              <div style="background-color: #09a5ff">
+                <span style="color: #cc3dc5">Title</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="oth-style">
+            <!-- <p>Custom Styles</p> -->
+            <div id="custom-style">
+              <!-- <p>Padding</p> -->
+              <div id="padding" style="display: none">
+                <div class="pd-i-1">
+                  <span top="true" class="area-edit">0</span>
+                </div>
+                <div class="pd-i-2">
+                  <span left="true" class="area-edit">0</span>
+                </div>
+                <div class="pd-i-3">content</div>
+                <div class="pd-i-4">
+                  <span right="true" class="area-edit">0</span>
+                </div>
+                <div class="pd-i-5">
+                  <span bottom="true" class="area-edit">0</span>
+                </div>
+              </div>
+              <!-- <p>Margin</p> -->
+              <div id="margin" style="display: none">
+                <div class="mr-i-1">
+                  <span top="true" class="area-edit">0</span>
+                </div>
+                <div class="mr-i-2">
+                  <span left="true" class="area-edit">0</span>
+                </div>
+                <div class="mr-i-3">content</div>
+                <div class="mr-i-4">
+                  <span right="true" class="area-edit">0</span>
+                </div>
+                <div class="mr-i-5">
+                  <span bottom="true" class="area-edit">0</span>
+                </div>
+              </div>
+
+              <!-- <p>Background</p> -->
+              <div id="background" style="display: none">
+                <div class="bg-i-1">
+                  <div id="color-picker"></div>
+                </div>
+              </div>
+
+              <!-- <p>Font</p> -->
+              <div id="font" style="display: none">
+                <div class="font-i-1">
+                  <div id="color-picker2"></div>
+                </div>
+
+                <!-- Font Style Element -->
+                <div class="font-i-2">
+                  <div class="font-biu">
+                    <label for="font-select"></label>
+                    <label>B</label>
+                    <label>I</label>
+                    <label>U</label>
+                    <label type="font-size" class="area-edit">0</label>
+                  </div>
+                  <select id="font-select">
+                    <option value="">Select a font...</option>
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="sans-serif">Sans Serif</option>
+                    <option value="Times New Roman, serif">
+                      Times New Roman
+                    </option>
+                    <option value="Courier New, monospace">Courier New</option>
+                    <option value="Georgia, serif">Georgia</option>
+                    <option value="Verdana, sans-serif">Verdana</option>
+                    <option value="Trebuchet MS, sans-serif">
+                      Trebuchet MS
+                    </option>
+                    <option value="Comic Sans MS, cursive">
+                      Comic Sans MS
+                    </option>
+                    <!-- Add more font options as needed -->
+                  </select>
+                  <div id="sample-text">Hi, Welcome to Form Made Easy</div>
+                </div>
+
+                <div class="font-i-3">
+                  <div></div>
+                </div>
+              </div>
+
+              <!-- <p>Border</p> -->
+              <div id="border" style="display: none">
+                <div>
+                  <div>
+                    <input type="color" id="border-color" value="#808080" />
+                  </div>
+
+                  <div type="border-line">
+                    <label for="border-width-all">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 76 76"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        baseProfile="full"
+                        enable-background="new 0 0 76.00 76.00"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill-opacity="1"
+                          stroke-width="0.2"
+                          stroke-linejoin="round"
+                          d="M 19,19L 57,19L 57,57L 19,57L 19,19 Z M 21.9999,22.0001L 22,37L 23,37L 23,39L 22,39L 21.9999,54L 37,54L 37,53L 39,53L 39,54L 53.9999,54L 53.9999,39L 53,39L 53,37L 53.9999,37L 53.9999,22.0001L 39,22.0001L 39,23L 37,23L 37,22.0001L 21.9999,22.0001 Z M 37,37L 39,37L 39,39L 39,39L 37,39L 37,37 Z M 39,43L 37,43L 37,41L 39,41L 39,43 Z M 39,47L 37,47L 37,45L 39,45L 39,47 Z M 39,51L 37,51L 37,49L 39,49L 39,51 Z M 39,27L 37,27L 37,25L 39,25L 39,27 Z M 39,31L 37,31L 37,29L 39,29L 39,31 Z M 39,35L 37,35L 37,33L 39,33L 39,35 Z M 27,37L 27,39L 25,39L 25,37L 27,37 Z M 31,37L 31,39L 29,39L 29,37L 31,37 Z M 35,37L 35,39L 33,39L 33,37L 35,37 Z M 48.9999,39L 48.9999,37L 51,37L 51,39L 48.9999,39 Z M 43,37L 43,39L 41,39L 41,37L 43,37 Z M 46.9999,37L 46.9999,39L 45,39L 45,37L 46.9999,37 Z "
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      type="number"
+                      id="border-width-all"
+                      min="0"
+                      value="2"
+                    />
+                  </div>
+
+                  <div type="border-line">
+                    <label for="border-width-top">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 76 76"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        baseProfile="full"
+                        enable-background="new 0 0 76.00 76.00"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill-opacity="1"
+                          stroke-width="0.2"
+                          stroke-linejoin="round"
+                          d="M 19,19L 57,19L 57,22L 39,22.0001L 39,23L 37,23L 37,22.0001L 19,22L 19,19 Z M 57,28L 54,28L 54,25L 57,25L 57,28 Z M 57,34L 54,34L 54,31L 57,31L 57,34 Z M 57,57L 54,57L 53.9999,54.0001L 57,54L 57,57 Z M 52.9999,39L 52.9999,37L 57,37L 57,39L 52.9999,39 Z M 57,45L 54,45L 54,42L 57,42L 57,45 Z M 57,51L 54,51L 54,48L 57,48L 57,51 Z M 22,28L 19,28L 19,25L 22,25L 22,28 Z M 22,34L 19,34L 19,31L 22,31L 22,34 Z M 22.9999,37.0001L 22.9999,39.0001L 19,39L 19,37L 22.9999,37.0001 Z M 22,45L 19,45L 19,42L 22,42L 22,45 Z M 22,51L 19,51L 19,48L 22,48L 22,51 Z M 21.9999,54.0001L 22,57L 19,57L 19,54L 21.9999,54.0001 Z M 37,53L 39,53L 39,57L 37,57L 37,53 Z M 31,57L 31,54L 34,54L 34,57L 31,57 Z M 25,57L 25,54L 28,54L 28,57L 25,57 Z M 47.9999,57L 47.9999,54L 50.9999,54L 50.9999,57L 47.9999,57 Z M 42,57L 42,54L 44.9999,54L 44.9999,57L 42,57 Z M 36.9999,37.0001L 38.9999,37.0001L 39,39L 36.9999,39.0001L 36.9999,37.0001 Z M 39,43L 37,43L 37,41L 39,41L 39,43 Z M 38.9999,47L 37,47L 37,45L 39,45L 38.9999,47 Z M 38.9999,51.0001L 36.9999,51.0001L 37,49L 38.9999,49L 38.9999,51.0001 Z M 38.9999,27.0001L 36.9999,27.0001L 36.9999,25.0001L 38.9999,25.0001L 38.9999,27.0001 Z M 38.9999,31.0001L 36.9999,31.0001L 36.9999,29.0001L 38.9999,29.0001L 38.9999,31.0001 Z M 38.9999,35.0001L 36.9999,35.0001L 36.9999,33.0001L 38.9999,33.0001L 38.9999,35.0001 Z M 26.9999,37.0001L 26.9999,39.0001L 24.9999,39.0001L 24.9999,37.0001L 26.9999,37.0001 Z M 30.9999,37.0001L 30.9999,39.0001L 28.9999,39.0001L 28.9999,37.0001L 30.9999,37.0001 Z M 34.9999,37.0001L 34.9999,39.0001L 32.9999,39.0001L 32.9999,37.0001L 34.9999,37.0001 Z M 48.9998,39.0001L 48.9998,37.0001L 50.9999,37.0001L 50.9999,39.0001L 48.9998,39.0001 Z M 42.9999,37.0001L 42.9999,39.0001L 40.9999,39.0001L 40.9999,37.0001L 42.9999,37.0001 Z M 46.9998,37.0001L 46.9998,39.0001L 44.9999,39.0001L 44.9999,37.0001L 46.9998,37.0001 Z "
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      type="number"
+                      id="border-width-top"
+                      min="0"
+                      value="2"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div type="border-line">
+                    <label for="border-width-right">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 76 76"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        baseProfile="full"
+                        enable-background="new 0 0 76.00 76.00"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill-opacity="1"
+                          stroke-width="0.2"
+                          stroke-linejoin="round"
+                          d="M 19,19L 22,19L 22,22L 19,22L 19,19 Z M 22,28L 19,28L 19,25L 22,25L 22,28 Z M 22,34L 19,34L 19,31L 22,31L 22,34 Z M 23,37L 23,39L 19,39L 19,37L 23,37 Z M 39,19L 39,23L 37,23L 37,19L 39,19 Z M 31,22L 31,19L 34,19L 34,22L 31,22 Z M 25,22L 25,19L 28,19L 28,22L 25,22 Z M 57,19L 57,57L 54,57L 53.9999,39.0001L 52.9999,39L 52.9999,37L 53.9999,37.0001L 54,19L 57,19 Z M 48,22L 48,19L 51,19L 51,22L 48,22 Z M 42,22L 42,19L 45,19L 45,22L 42,22 Z M 22,45L 19,45L 19,42L 22,42L 22,45 Z M 22,51L 19,51L 19,48L 22,48L 22,51 Z M 21.9999,54.0001L 22,57L 19,57L 19,54L 21.9999,54.0001 Z M 37,53L 39,53L 39,57L 37,57L 37,53 Z M 31,57L 31,54L 34,54L 34,57L 31,57 Z M 25,57L 25,54L 28,54L 28,57L 25,57 Z M 47.9999,57L 47.9999,54L 50.9999,54L 50.9999,57L 47.9999,57 Z M 42,57L 42,54L 44.9999,54L 44.9999,57L 42,57 Z M 36.9999,37.0001L 38.9999,37.0001L 39,39L 36.9999,39.0001L 36.9999,37.0001 Z M 39,43L 37,43L 37,41L 39,41L 39,43 Z M 38.9999,47L 37,47L 37,45L 39,45L 38.9999,47 Z M 38.9999,51.0001L 36.9999,51.0001L 37,49L 38.9999,49L 38.9999,51.0001 Z M 38.9999,27.0001L 36.9999,27.0001L 36.9999,25.0001L 38.9999,25.0001L 38.9999,27.0001 Z M 38.9999,31.0001L 36.9999,31.0001L 36.9999,29.0001L 38.9999,29.0001L 38.9999,31.0001 Z M 38.9999,35.0001L 36.9999,35.0001L 36.9999,33.0001L 38.9999,33.0001L 38.9999,35.0001 Z M 26.9999,37.0001L 26.9999,39.0001L 24.9999,39.0001L 24.9999,37.0001L 26.9999,37.0001 Z M 30.9999,37.0001L 30.9999,39.0001L 28.9999,39.0001L 28.9999,37.0001L 30.9999,37.0001 Z M 34.9999,37.0001L 34.9999,39.0001L 32.9999,39.0001L 32.9999,37.0001L 34.9999,37.0001 Z M 48.9998,39.0001L 48.9998,37.0001L 50.9999,37.0001L 50.9999,39.0001L 48.9998,39.0001 Z M 42.9999,37.0001L 42.9999,39.0001L 40.9999,39.0001L 40.9999,37.0001L 42.9999,37.0001 Z M 46.9998,37.0001L 46.9998,39.0001L 44.9999,39.0001L 44.9999,37.0001L 46.9998,37.0001 Z "
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      type="number"
+                      id="border-width-right"
+                      min="0"
+                      value="2"
+                    />
+                  </div>
+
+                  <div type="border-line">
+                    <label for="border-width-bottom">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 76 76"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        baseProfile="full"
+                        enable-background="new 0 0 76.00 76.00"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill-opacity="1"
+                          stroke-width="0.2"
+                          stroke-linejoin="round"
+                          d="M 19,19L 22,19L 22,22L 19,22L 19,19 Z M 22,28L 19,28L 19,25L 22,25L 22,28 Z M 22,34L 19,34L 19,31L 22,31L 22,34 Z M 22.9999,37.0001L 22.9999,39.0001L 19,39L 19,37L 22.9999,37.0001 Z M 39,19.0001L 39,23.0001L 37,23.0001L 37,19.0001L 39,19.0001 Z M 31,22L 31,19.0001L 34,19.0001L 34,22L 31,22 Z M 25,22.0001L 25,19.0001L 28,19.0001L 28,22L 25,22.0001 Z M 56.9999,19.0001L 57,22L 54,22L 53.9999,19.0001L 56.9999,19.0001 Z M 57,28L 54,28L 54,25L 57,25L 57,28 Z M 57,34L 54,34L 54,31L 57,31L 57,34 Z M 56.9999,57L 19,57L 19,54L 36.9999,54.0001L 37,53L 39,53L 38.9999,54.0001L 57,54L 56.9999,57 Z M 52.9999,39.0001L 52.9999,37.0001L 57,37L 57,39L 52.9999,39.0001 Z M 57,45L 54,45L 54,42L 57,42L 57,45 Z M 57,51L 54,51L 54,48L 57,48L 57,51 Z M 47.9999,22.0001L 47.9999,19.0001L 50.9999,19.0001L 50.9999,22.0001L 47.9999,22.0001 Z M 42,22.0001L 42,19.0001L 44.9999,19.0001L 44.9999,22.0001L 42,22.0001 Z M 21.9999,45L 19,45L 19,42L 21.9999,42L 21.9999,45 Z M 22,51L 19,51L 19,48L 21.9999,48L 22,51 Z M 36.9999,37.0001L 38.9999,37.0001L 39,39L 36.9999,39.0001L 36.9999,37.0001 Z M 39,43L 37,43L 37,41L 39,41L 39,43 Z M 38.9999,47L 37,47L 37,45L 39,45L 38.9999,47 Z M 38.9999,51.0001L 36.9999,51.0001L 37,49L 38.9999,49L 38.9999,51.0001 Z M 38.9999,27.0001L 36.9999,27.0001L 36.9999,25.0001L 38.9999,25.0001L 38.9999,27.0001 Z M 38.9999,31.0001L 36.9999,31.0001L 36.9999,29.0001L 38.9999,29.0001L 38.9999,31.0001 Z M 38.9999,35.0001L 36.9999,35.0001L 36.9999,33.0001L 38.9999,33.0001L 38.9999,35.0001 Z M 26.9999,37.0001L 26.9999,39.0001L 24.9999,39.0001L 24.9999,37.0001L 26.9999,37.0001 Z M 30.9999,37.0001L 30.9999,39.0001L 28.9999,39.0001L 28.9999,37.0001L 30.9999,37.0001 Z M 34.9999,37.0001L 34.9999,39.0001L 32.9999,39.0001L 32.9999,37.0001L 34.9999,37.0001 Z M 48.9998,39.0001L 48.9998,37.0001L 50.9999,37.0001L 50.9999,39.0001L 48.9998,39.0001 Z M 42.9999,37.0001L 42.9999,39.0001L 40.9999,39.0001L 40.9999,37.0001L 42.9999,37.0001 Z M 46.9998,37.0001L 46.9998,39.0001L 44.9999,39.0001L 44.9999,37.0001L 46.9998,37.0001 Z "
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      type="number"
+                      id="border-width-bottom"
+                      min="0"
+                      value="2"
+                    />
+                  </div>
+
+                  <div type="border-line">
+                    <label for="border-width-left">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 76 76"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        baseProfile="full"
+                        enable-background="new 0 0 76.00 76.00"
+                        xml:space="preserve"
+                      >
+                        <path
+                          fill-opacity="1"
+                          stroke-width="0.2"
+                          stroke-linejoin="round"
+                          d="M 19,19L 22,19L 22,37L 23,37L 23,39L 22,39L 22,57L 19,57L 19,19 Z M 39,19L 39,23.0001L 37,23.0001L 37,19L 39,19 Z M 31,22L 31,19L 34,19L 34,22L 31,22 Z M 25,22L 25,19L 28,19L 28,22L 25,22 Z M 56.9999,19.0001L 57,22L 54,22L 53.9999,19.0001L 56.9999,19.0001 Z M 57,28L 54,28L 54,25L 57,25L 57,28 Z M 57,34L 54,34L 54,31L 57,31L 57,34 Z M 56.9999,57L 53.9999,57L 53.9998,54.0001L 57,54L 56.9999,57 Z M 52.9999,39.0001L 52.9999,37.0001L 57,37L 57,39L 52.9999,39.0001 Z M 57,45L 54,45L 54,42L 57,42L 57,45 Z M 57,51L 54,51L 54,48L 57,48L 57,51 Z M 47.9999,22L 47.9999,19.0001L 51,19.0001L 51,22L 47.9999,22 Z M 42,22.0001L 42,19.0001L 44.9999,19.0001L 44.9999,22L 42,22.0001 Z M 37,53L 39,53L 39,57L 37,57L 37,53 Z M 31,57L 31,54L 34,54L 34,57L 31,57 Z M 25,57L 25,54L 28,54L 28,57L 25,57 Z M 47.9999,57L 47.9999,54L 50.9999,54L 50.9999,57L 47.9999,57 Z M 42,57L 42,54L 44.9999,54L 44.9999,57L 42,57 Z M 36.9999,37.0001L 38.9999,37.0001L 39,39L 36.9999,39.0001L 36.9999,37.0001 Z M 39,43L 37,43L 37,41L 39,41L 39,43 Z M 38.9999,47L 37,47L 37,45L 39,45L 38.9999,47 Z M 38.9999,51.0001L 36.9999,51.0001L 37,49L 38.9999,49L 38.9999,51.0001 Z M 38.9999,27.0001L 36.9999,27.0001L 36.9999,25.0001L 38.9999,25.0001L 38.9999,27.0001 Z M 38.9999,31.0001L 36.9999,31.0001L 36.9999,29.0001L 38.9999,29.0001L 38.9999,31.0001 Z M 38.9999,35.0001L 36.9999,35.0001L 36.9999,33.0001L 38.9999,33.0001L 38.9999,35.0001 Z M 26.9999,37.0001L 26.9999,39.0001L 24.9999,39.0001L 24.9999,37.0001L 26.9999,37.0001 Z M 30.9999,37.0001L 30.9999,39.0001L 28.9999,39.0001L 28.9999,37.0001L 30.9999,37.0001 Z M 34.9999,37.0001L 34.9999,39.0001L 32.9999,39.0001L 32.9999,37.0001L 34.9999,37.0001 Z M 48.9998,39.0001L 48.9998,37.0001L 50.9999,37.0001L 50.9999,39.0001L 48.9998,39.0001 Z M 42.9999,37.0001L 42.9999,39.0001L 40.9999,39.0001L 40.9999,37.0001L 42.9999,37.0001 Z M 46.9998,37.0001L 46.9998,39.0001L 44.9999,39.0001L 44.9999,37.0001L 46.9998,37.0001 Z "
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      type="number"
+                      id="border-width-left"
+                      min="0"
+                      value="2"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="border-style">Border Type</label>
+                  <select id="border-style">
+                    <option value="solid">Solid</option>
+                    <option value="dashed">Dashed</option>
+                    <option value="dotted">Dotted</option>
+                    <option value="double">Double</option>
+                    <option value="groove">Groove</option>
+                    <option value="ridge">Ridge</option>
+                    <option value="inset">Inset</option>
+                    <option value="outset">Outset</option>
+                  </select>
+                </div>
+
+                <div class="border-radius">
+                  <div class="radius-buttons">
+                    <button id="all-sides">
+                      <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="m7.8 2.25h-.0321-.00002c-.81283-.00001-1.46844-.00001-1.99935.04336-.54663.04467-1.02678.13903-1.47099.36537-.70561.35952-1.27929.9332-1.63881 1.63881-.22634.44421-.3207.92436-.36537 1.47099-.04337.53091-.04337 1.18652-.04336 1.99935v.00002.0321 8.4.0321c-.00001.8129-.00001 1.4685.04336 1.9994.04467.5466.13903 1.0267.36537 1.471.35952.7056.9332 1.2792 1.63881 1.6388.44421.2263.92436.3207 1.47099.3653.53091.0434 1.18652.0434 1.99935.0434h.03212 8.4.0321c.8129 0 1.4685 0 1.9994-.0434.5466-.0446 1.0267-.139 1.471-.3653.7056-.3596 1.2792-.9332 1.6388-1.6388.2263-.4443.3207-.9244.3653-1.471.0434-.5309.0434-1.1865.0434-1.9994v-.0321-8.4-.03212c0-.81283 0-1.46844-.0434-1.99935-.0446-.54663-.139-1.02678-.3653-1.47099-.3596-.70561-.9332-1.27929-1.6388-1.63881-.4443-.22634-.9244-.3207-1.471-.36537-.5309-.04337-1.1865-.04337-1.9994-.04336h-.0321zm-2.82148 1.74524c.19752-.10064.45829-.16977.91216-.20686.46263-.0378 1.05687-.03838 1.90932-.03838h8.4c.8525 0 1.4467.00058 1.9093.03838.4539.03709.7147.10622.9122.20686.4233.21571.7675.55992.9833.98328.1006.19752.1697.45829.2068.91216.0378.46263.0384 1.05687.0384 1.90932v8.4c0 .8525-.0006 1.4467-.0384 1.9093-.0371.4539-.1062.7147-.2068.9122-.2158.4233-.56.7675-.9833.9833-.1975.1006-.4583.1697-.9122.2068-.4626.0378-1.0568.0384-1.9093.0384h-8.4c-.85245 0-1.44669-.0006-1.90932-.0384-.45387-.0371-.71464-.1062-.91216-.2068-.42336-.2158-.76757-.56-.98328-.9833-.10064-.1975-.16977-.4583-.20686-.9122-.0378-.4626-.03838-1.0568-.03838-1.9093v-8.4c0-.85245.00058-1.44669.03838-1.90932.03709-.45387.10622-.71464.20686-.91216.21571-.42336.55992-.76757.98328-.98328zm8.22148 2.75476c.8525 0 1.4467.00058 1.9093.03838.4539.03709.7147.10622.9122.20686.4233.21571.7675.55992.9833.98328.1006.19752.1697.45828.2068.91216.0378.46263.0384 1.05687.0384 1.90932v2.2c0 .4142.3358.75.75.75s.75-.3358.75-.75v-2.2-.0321c0-.81284 0-1.46846-.0434-1.99937-.0446-.54663-.139-1.02678-.3653-1.47099-.3596-.70561-.9332-1.27929-1.6388-1.63881-.4443-.22634-.9244-.3207-1.471-.36537-.5309-.04337-1.1866-.04337-1.9994-.04336h-.0321-2.2c-.4142 0-.75.33579-.75.75s.3358.75.75.75z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <button id="top-left">
+                      <?xml version="1.0" standalone="no"?>
+                      <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          d="M656 200h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm58 624h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM192 650h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm696-696h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-348 0h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-174 0h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm174-696H358c-127 0-230 103-230 230v182c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V358c0-87.3 70.7-158 158-158h182c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"
+                        />
+                      </svg>
+                    </button>
+                    <button id="top-right">
+                      <?xml version="1.0" standalone="no"?>
+                      <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          d="M368 128h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-2 696h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm522-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM192 128h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm348 0h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm174 0h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-48-696H484c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h182c87.3 0 158 70.7 158 158v182c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V358c0-127-103-230-230-230z"
+                        />
+                      </svg>
+                    </button>
+                    <button id="bottom-right">
+                      <?xml version="1.0" standalone="no"?>
+                      <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          d="M368 824h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-58-624h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm578 102h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM192 824h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm292 72h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm174 0h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm230 276h-56c-4.4 0-8 3.6-8 8v182c0 87.3-70.7 158-158 158H484c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h182c127 0 230-103 230-230V484c0-4.4-3.6-8-8-8z"
+                        />
+                      </svg>
+                    </button>
+                    <button id="bottom-left">
+                      <?xml version="1.0" standalone="no"?>
+                      <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          d="M712 824h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm2-696h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM136 374h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm0-174h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm752 624h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0-174h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-348 0h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-230 72h56c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm230 624H358c-87.3 0-158-70.7-158-158V484c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v182c0 127 103 230 230 230h182c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <p>Box Shadow</p> -->
+              <div id="box-shadow" style="display: none">
+                <div class="box-shadow-con">
+                  <div class="form-group">
+                    <label for="b-r-horizontal">Horizontal Offset:</label>
+                    <input
+                      type="range"
+                      id="b-r-horizontal"
+                      min="-100"
+                      max="100"
+                      value="0"
+                      class="slider"
+                    />
+                    <span id="horizontal-value">0px</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="b-r-vertical">Vertical Offset:</label>
+                    <input
+                      type="range"
+                      id="b-r-vertical"
+                      min="-100"
+                      max="100"
+                      value="0"
+                      class="slider"
+                    />
+                    <span id="vertical-value">0px</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="b-r-blur">Blur Radius:</label>
+                    <input
+                      type="range"
+                      id="b-r-blur"
+                      min="0"
+                      max="100"
+                      value="10"
+                      class="slider"
+                    />
+                    <span id="blur-value">10px</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="b-r-spread">Spread Radius:</label>
+                    <input
+                      type="range"
+                      id="b-r-spread"
+                      min="-50"
+                      max="50"
+                      value="0"
+                      class="slider"
+                    />
+                    <span id="spread-value">0px</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="b-r-color">Color:</label>
+                    <input
+                      type="color"
+                      id="b-r-color"
+                      value="#ffffff"
+                      class="color-picker"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div id="layout" style="display: none">
+                <div class="layout-group">
+                  <label for="layout-direction">Direction:</label>
+                  <select id="layout-direction">
+                    <option value="normal">Normal</option>
+                    <option value="row">Row</option>
+                    <option value="column">Column</option>
+                  </select>
+                </div>
+
+                <div class="layout-group">
+                  <label for="layout-justify">Justify Content:</label>
+                  <select id="layout-justify">
+                    <option value="normal">Normal</option>
+                    <option value="flex-start">Start</option>
+                    <option value="center">Center</option>
+                    <option value="space-between">Space Between</option>
+                    <option value="space-around">Space Around</option>
+                    <option value="space-evenly">Space Evenly</option>
+                  </select>
+                </div>
+
+                <div class="layout-group">
+                  <label for="layout-align">Align Items:</label>
+                  <select id="layout-align">
+                    <option value="normal">Normal</option>
+                    <option value="flex-start">Start</option>
+                    <option value="center">Center</option>
+                    <option value="baseline">Baseline</option>
+                    <option value="stretch">Stretch</option>
+                  </select>
+                </div>
+
+                <div class="layout-group">
+                  <label for="layout-gap">Gap:</label>
+                  <input
+                    type="range"
+                    id="layout-gap"
+                    min="0"
+                    max="100"
+                    value="10"
+                  />
+                  <span id="layout-gapValue">10</span> px
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./templateFunc/templateDef.js"></script>
+    <script src="./templateFunc/templateA.js"></script>
+    <script src="./templateFunc/templateB.js"></script>
+    <script src="./templateFunc/templateC.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.9.1/dist/pickr.min.js"></script>
+
+    <script type="module" src="./editorJs/index.js"></script>
+  </body>
+</html>

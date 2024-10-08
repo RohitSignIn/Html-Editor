@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Layout Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .editor {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        #layout {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: row; /* Default direction */
+            justify-content: flex-start;
+            align-items: stretch;
+            gap: 10px; /* Default gap */
+            height: 300px; /* Example height */
+            border: 2px dashed #ddd; /* For visibility */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .item {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 16px;
+            flex: 1;
+            min-width: 100px; /* Ensure items don't shrink too much */
+        }
+        .item:nth-child(even) {
+            background: #28a745;
+        }
+        .item:nth-child(odd) {
+            background: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="editor">
+        <div id="layout">
+            <div class="control-group">
+                <label for="direction">Direction:</label>
+                <select id="direction">
+                    <option value="row">Row</option>
+                    <option value="column">Column</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="justify">Justify Content:</label>
+                <select id="justify">
+                    <option value="flex-start">Start</option>
+                    <option value="center">Center</option>
+                    <option value="space-between">Space Between</option>
+                    <option value="space-around">Space Around</option>
+                    <option value="space-evenly">Space Evenly</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="align">Align Items:</label>
+                <select id="align">
+                    <option value="flex-start">Start</option>
+                    <option value="center">Center</option>
+                    <option value="baseline">Baseline</option>
+                    <option value="stretch">Stretch</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="gap">Gap:</label>
+                <input type="range" id="gap" min="0" max="100" value="10">
+                <span id="gapValue">10</span> px
+            </div>
+        </div>
+
+        <div class="container" id="layoutContainer">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('layoutContainer');
+        const gapInput = document.getElementById('gap');
+        const gapValue = document.getElementById('gapValue');
+
+        document.getElementById('direction').addEventListener('change', function() {
+            container.style.flexDirection = this.value;
+        });
+
+        document.getElementById('justify').addEventListener('change', function() {
+            container.style.justifyContent = this.value;
+        });
+
+        document.getElementById('align').addEventListener('change', function() {
+            container.style.alignItems = this.value;
+        });
+
+        gapInput.addEventListener('input', function() {
+            container.style.gap = `${this.value}px`;
+            gapValue.textContent = this.value;
+        });
+    </script>
+</body>
+</html>

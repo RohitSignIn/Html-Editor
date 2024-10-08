@@ -1,0 +1,461 @@
+:root {
+  --edit-elem-width: 250px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#temp-edit-con #temp-wrap {
+  margin: 1rem;
+  width: calc(100% - 315px);
+}
+#temp-edit-con #temp-editor {
+  width: 100%;
+  display: flex;
+  padding: 0.8rem 0.6rem;
+  flex-direction: column;
+  align-items: center;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: fixed !important;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  font-family: sans-serif;
+  background-color: #000000;
+  max-width: 280px;
+  border-left: 4px solid #fff;
+}
+#temp-edit-con #temp-editor::-webkit-scrollbar {
+  display: none;
+}
+#temp-edit-con #temp-editor p {
+  color: #2d2d2d;
+  padding: 0.4rem 0.4rem;
+  background-color: #ffffff;
+  font-size: 0.8rem;
+  margin: 0.6rem 0;
+  cursor: pointer;
+}
+#temp-edit-con #temp-editor #editor-nav,
+#temp-edit-con #temp-editor #style-nav {
+  width: 100%;
+}
+#temp-edit-con #temp-editor #editor-nav > div,
+#temp-edit-con #temp-editor #style-nav > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+#temp-edit-con #temp-editor #editor-nav > div > div,
+#temp-edit-con #temp-editor #style-nav > div > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 60px;
+  background-color: #2d2d2d;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+#temp-edit-con #temp-editor #editor-nav > div > div > div > svg,
+#temp-edit-con #temp-editor #style-nav > div > div > div > svg {
+  fill: #fff;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  width: 24px;
+  height: 24px;
+}
+#temp-edit-con #temp-editor #editor-nav > div > div:hover,
+#temp-edit-con #temp-editor #style-nav > div > div:hover {
+  opacity: 1;
+}
+#temp-edit-con #temp-editor #editor-nav > div > div:hover > div > svg,
+#temp-edit-con #temp-editor #style-nav > div > div:hover > div > svg {
+  transform: scale(1.1);
+}
+#temp-edit-con #temp-editor #editor-nav > div > div > p,
+#temp-edit-con #temp-editor #style-nav > div > div > p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 0;
+  height: -moz-max-content;
+  height: max-content;
+  width: inherit;
+  color: #ffffff;
+  background-color: rgba(45, 45, 45, 0.6);
+  padding: 0.2rem;
+}
+#temp-edit-con #temp-editor #editor-nav {
+  margin-top: 26px;
+}
+#temp-edit-con #temp-editor #style-nav > div:first-child,
+#temp-edit-con #temp-editor #main-styles > div:first-child {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.4rem;
+  cursor: pointer;
+  fill: #646464;
+  transition: all 0.2s ease-in-out;
+}
+#temp-edit-con #temp-editor #style-nav > div:first-child:hover,
+#temp-edit-con #temp-editor #main-styles > div:first-child:hover {
+  fill: #ffffff;
+}
+#temp-edit-con #temp-editor #main-styles {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+#temp-edit-con #temp-editor #main-styles #avlbl-temp {
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.4rem;
+}
+#temp-edit-con #temp-editor #main-styles #avlbl-temp > div {
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 0.65rem;
+  width: 80px;
+  height: 50px;
+  background-color: purple;
+  border: 1px solid #575757;
+  box-shadow: 2px 2px 4px #2d2d2d;
+}
+#temp-edit-con #temp-editor #main-styles #avlbl-temp > div > div {
+  position: absolute;
+  padding: 0.2rem;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  height: 40px;
+  border-top-left-radius: 5px;
+  color: tomato;
+  background-color: #fff;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style {
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  /* Container Styles */
+}
+#temp-edit-con #temp-editor #main-styles #oth-style > p:first-child {
+  background: none;
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+  padding: 0;
+  text-decoration: underline;
+  width: 100%;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #padding {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 0.75rem;
+  gap: 1rem;
+  align-items: center;
+  background-color: lightgreen;
+  padding: 0.6rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #padding .pd-i-1,
+#temp-edit-con #temp-editor #main-styles #oth-style #padding .pd-i-5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #padding .pd-i-3 {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 0.4rem 0;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #padding .area-edit {
+  padding: 0.2rem 0.4rem;
+  outline: none;
+  border: 1px solid #ffffff;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #margin {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 0.75rem;
+  gap: 1rem;
+  align-items: center;
+  background-color: rgb(255, 167, 52);
+  padding: 0.6rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #margin .mr-i-1,
+#temp-edit-con #temp-editor #main-styles #oth-style #margin .mr-i-5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #margin .mr-i-3 {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 0.4rem 0;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #margin .area-edit {
+  padding: 0.2rem 0.4rem;
+  outline: none;
+  border: 1px solid #ffffff;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #background {
+  width: 100%;
+  position: relative;
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 #font-select {
+  width: 100%; /* Full width of the container */
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 #sample-text {
+  padding: 6px;
+  line-height: 1.4;
+  background-color: #fff;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child {
+  margin: 0.4rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child > label:first-child {
+  margin-right: auto;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child > label:not(:first-child) {
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  background-color: #bdbdbd;
+  color: #fff;
+  border-radius: 5px;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child > label:not(:first-child)[active=true] {
+  color: #3795bd;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child > label:nth-child(2) {
+  font-weight: 600;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child > label:nth-child(3) {
+  font-style: italic;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child > label:nth-child(4) {
+  text-decoration: underline;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #font .font-i-2 > div:first-child > label:last-child {
+  outline: none;
+  background-color: #fff;
+  color: #2d2d2d;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem !important;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border {
+  width: 100%;
+  padding: 0.8rem;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border > div > label[for=border-style] {
+  font-size: 0.95rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border > div:not(:first-child) {
+  margin-top: 0.6rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border input,
+#temp-edit-con #temp-editor #main-styles #oth-style #border select {
+  padding: 6px 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 2rem;
+  text-align: center;
+  outline: none;
+  border: 1px solid #e7e7e7;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border select {
+  width: 6rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border input[type=color] {
+  width: 4.2rem;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border input[type=number]::-webkit-inner-spin-button,
+#temp-edit-con #temp-editor #main-styles #oth-style #border input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border svg[type=active] {
+  fill: #3795bd;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border .radius-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border .radius-buttons > button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 2px;
+  background-color: #bdbdbd;
+  padding: 0.2rem 0.4rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border .radius-buttons > button > svg {
+  fill: #ffffff;
+  border-radius: 5px;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #border .radius-buttons > button > svg[type=active] {
+  fill: #3795bd !important;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* Form Styles */
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* Form Group Styles */
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* Label Styles */
+  /* Slider Styles */
+  /* Color Picker Styles */
+  /* Value Display Styles */
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group label {
+  font-size: 0.9rem;
+  color: #555;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group .slider:hover {
+  opacity: 1;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group .slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group .color-picker {
+  width: 100%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #box-shadow .box-shadow-con .form-group .form-group span {
+  font-size: 1rem;
+  color: #333;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 20px;
+  color: #555;
+  width: 100%;
+  font-size: 0.9rem;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #layout label {
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+}
+#temp-edit-con #temp-editor #main-styles #oth-style #layout select,
+#temp-edit-con #temp-editor #main-styles #oth-style #layout input {
+  outline: none;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */
